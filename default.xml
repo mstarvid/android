@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="msv" 
-           fetch="http://github.com/mstarvid"
+           fetch="http://github.com"
            revision="refs/heads/cm-12.1"
   />
 
