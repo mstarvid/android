@@ -12,7 +12,7 @@
            revision="refs/tags/android-5.1.1_r6" />
 
   <remote  name="cyanogen"
-           fetch="http://github.com/CyanogenMod"
+           fetch="http://github.com"
            review="review.cyanogenmod.org" />
 
   <remote  name="private"
