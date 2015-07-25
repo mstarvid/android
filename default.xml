@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="msv" 
+           fetch="http://github.com/mstarvid"
+           revision="refs/heads/cm-12.1"
+  />
+
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-5.1.1_r6" />
 
-  <remote  name="github"
-           fetch=".."
+  <remote  name="cyanogen"
+           fetch="http://github.com/CyanogenMod"
            review="review.cyanogenmod.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
   <default revision="refs/heads/cm-12.1"
-           remote="github"
+           remote="cyanogen"
            sync-c="true"
            sync-j="4" />
 
@@ -590,6 +595,6 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
+  <project path="vendor/cm" name="mstarvid/android_vendor_cm" remote="msv"/>
   <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" />
 </manifest>
