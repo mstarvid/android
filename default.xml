@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+ <remote name="github" 
+           fetch="http://github.com"
+  />
+
+
   <remote name="msv" 
            fetch="http://github.com"
            revision="refs/heads/cm-12.1"
